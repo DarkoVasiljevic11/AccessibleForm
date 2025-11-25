@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccessibleForm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bcontainer">
+    <form>
+     <label for="name" >Full Name</label><br>
+     <input type="text" id="name" name="name" placeholder="What should we call you?" required aria-required="true"><br>
+     <label for="email">Email</label><br>
+     <input type="email" id="email" name="email" aria-describedby="emailHelp" required aria-required="true"><br>
+     <label for="epassword">Enter Password</label><br>
+     <div class="password-wrapper">
+     <input type="checkbox" class="password-toggle">
+     <span class="eye-icon"></span>
+     <input type="password" id="epassword" class="password password-input" name="epassword" required aria-required="true">
+     <input type="text" class="password-text" placeholder="Enter Password">
+     </div>
+     <br>
+     <label for="cpassword">Confirm Password</label><br>
+      <div class="password-wrapper">
+    <input type="checkbox" class="password-toggle">
+    <span class="eye-icon"></span>
+    <input type="password" id="cpassword" class="password password-input" name="cpassword" required aria-required="true">
+    <input type="text" class="password-text" placeholder="Confirm Password">
+    </div>
+    <br><br>
+     <button>Update Profile</button>
+    </form>
+    <div class="insider">
+    <div class="scontainer">
+    <img src="percentage.png" alt="percentage">
+    <p class="profile">Profile Completeness</p>
+    </div>
+    <div class="container">
+    <p class="str">Create Account</p>
+    <p class="str">Update Roadmap Progress</p>
+    <p class="str">Setup Public Profile</p>
+    <p>Complete your first project</p>
+    <p>Invite your Friends</p>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
